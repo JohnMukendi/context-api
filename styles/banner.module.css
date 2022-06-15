@@ -1,0 +1,124 @@
+.banner{
+    padding-left:40px;
+    width:100%
+}
+.navBar{
+    display:flex;
+    padding:20px 0px;
+    align-items:center;
+    width:100%;
+    position:relative
+}
+.gradientDiv{
+    position:absolute;
+    top:0px;
+    left: -40px;
+    width: 100%;
+    
+    z-index:-1 ;   
+}.gradientDiv img{
+    width: 100%;
+}
+.logoDiv{
+    display: flex;
+    align-items: center;
+    width:30%
+}
+.navLinks{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    justify-content:space-around;
+    padding-right: 10%;
+}
+.navLinks a{
+    text-decoration: none;
+    color:black;
+    font-weight:550;
+    font-size:15px;
+}
+.navLinks a::after{
+    content: "";
+    display:flex;
+    justify-content: center;
+    width: 0;
+    background:var(--green1);
+    height: 2px;
+    transition: 0.5s;
+    margin: auto;
+}
+.navLinks a:hover::after{
+
+    letter-spacing: 2px;
+    transition: 0.5s;
+    width: 100%;
+    background: var(--green2);
+}
+.logInDiv{ 
+    width: 20%;
+    padding:0px 20px;
+    z-index: -1;
+}
+.logInBtn{
+    background-color:transparent;
+    border-style:none;
+    padding: 20px;
+}
+.demoBtn{
+    border-style:none;
+    background:var(--black);
+    color:white;
+    padding:10px 15px;
+    border-radius:50px;
+}
+/* BANNER SECTION AFTER NAV BAR */
+.bannerSection{
+    display:flex
+}
+.left-ban-sect{
+    width:45%;
+}
+.left-ban-sect h1{
+    padding: 20% 70px 4% 0;
+    font-size: 54px;
+    letter-spacing: 1px;
+    
+}
+.left-ban-sect h1 span:hover{
+    transition:0.5s;
+    font-size: 56px;
+    cursor: pointer;
+}
+.left-ban-sect p{
+    padding: 0px 90px 0 0;
+    font-size:18px;
+    color: rgb(30,30,30);
+    line-height: 2;
+}
+.right-ban-sect{
+    width:55%;
+}
+.right-ban-sect div{
+    width: 100%;
+}
+.right-ban-sect  img{
+    width: 100%;
+}
+.banner-sect-btn-div{
+    padding: 20px 0px;
+}
+.banner-sect-btn-div button{
+    border-radius:50px;
+    padding: 20px 45px;
+    margin-right: 5%;
+}
+.banner-sect-btn1{
+    background: var(--green1);
+    color: aliceblue;
+    border-style: none;
+}
+.banner-sect-btn2{
+    background: transparent;
+    border: 1px solid var(--black);
+    
+}
